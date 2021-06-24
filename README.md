@@ -28,6 +28,14 @@ Constant variables:
 | EMAIL_TEXT | "Plain text" |
 | DEBUG | true |
 
+## Email preparation
+
+This links can help you:
+
+https://myaccount.google.com/lesssecureapps
+
+https://accounts.google.com/DisplayUnlockCaptcha
+
 ## Executing
 
 ```sh
