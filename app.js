@@ -16,16 +16,16 @@ function main(users, to) {
         if (users[i] == null) return;
 
         const user = users[i];
-        let time = 1000 * Math.ceil(Math.random() * 10);
+        let time = 4000 + 1000 * Math.ceil(Math.random() * 5);
         const timeExecute = process.env.EXECUTION_TIME;
 
+        if (DEBUG) console.log({
+            user: user,
+            time: time
+        });
+
         var interval = setInterval(() => {
-            if (DEBUG) console.log({
-                user: user,
-                time: time
-            });
             send(user, to);
-            time = 1000 * Math.ceil(Math.random() * 10);
         }, time);
         setTimeout(() => {
             clearInterval(interval);
