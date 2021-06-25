@@ -24,7 +24,7 @@ function main(users, to) {
             time: time
         });
 
-        var interval = setInterval(() => {
+        let interval = setInterval(() => {
             send(user, to);
         }, time);
         setTimeout(() => {
